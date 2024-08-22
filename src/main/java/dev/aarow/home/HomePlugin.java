@@ -6,6 +6,7 @@ import dev.aarow.home.commands.impl.HomeListCommand;
 import dev.aarow.home.commands.impl.SetHomeCommand;
 import dev.aarow.home.handlers.impl.HomeHandler;
 import dev.aarow.home.managers.impl.DatabaseManager;
+import dev.aarow.home.managers.impl.ExternalAPIManager;
 import dev.aarow.home.managers.impl.ProfileManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -15,6 +16,7 @@ public class HomePlugin extends JavaPlugin {
 
     private ProfileManager profileManager;
     private DatabaseManager databaseManager;
+    private ExternalAPIManager externalAPIManager;
 
     @Override
     public void onEnable() {
@@ -24,6 +26,7 @@ public class HomePlugin extends JavaPlugin {
 
         this.profileManager = new ProfileManager();
         this.databaseManager = new DatabaseManager();
+        this.externalAPIManager = new ExternalAPIManager();
 
         this.registerCommands();
         this.registerHandlers();

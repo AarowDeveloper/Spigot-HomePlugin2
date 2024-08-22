@@ -19,6 +19,7 @@
               <artifactSet>
                 <includes>
                   <include>org.mongodb:mongo-java-driver</include>
+                  <include>org.json:json</include>
                 </includes>
               </artifactSet>
             </configuration>

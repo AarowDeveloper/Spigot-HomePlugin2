@@ -2,6 +2,7 @@ package dev.aarow.home.managers.impl;
 
 import dev.aarow.home.data.player.Profile;
 import dev.aarow.home.managers.Manager;
+import org.bson.Document;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
@@ -30,5 +31,9 @@ public class ProfileManager extends Manager {
         this.profiles.putIfAbsent(uuid, new Profile(uuid));
 
         return this.profiles.get(uuid);
+    }
+
+    public boolean exists(UUID uuid){
+        return plugin.getDatabaseManager().getProfiles().find(new Document("UUID", uuid.toString())).first() != null;
     }
 }
