@@ -1,0 +1,12 @@
+name: Homes
+version: ALPHA-1.0
+main: dev.aarow.home.HomePlugin
+author: Aarow_
+commands:
+  home:
+    aliases: [h]
+  sethome:
+  homelist:
+    aliases: [hl]
+  deletehome:
+    aliases: [delhome]

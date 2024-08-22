@@ -1,0 +1,9 @@
+MONGODB:
+  HOST: localhost
+  PORT: 27017
+  DATABASE: "homeplugin"
+  AUTHENTICATION:
+    ENABLED: false
+    USERNAME: ""
+    PASSWORD: ""
+SPECIAL-API-ACCESS-KEY: "aB3fG7x9zY2kL6mQpW1rXvJ8sC4nH5dT7uI0bV3oN9eF2gM4w"
