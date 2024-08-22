@@ -1,2 +1,6 @@
-package dev.aarow.home.externalapi;public class Protocol {
+package dev.aarow.home.externalapi;
+
+public class Protocol {
+
+
 }

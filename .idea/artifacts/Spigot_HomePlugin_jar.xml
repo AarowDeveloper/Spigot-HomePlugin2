@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Spigot-HomePlugin:jar">
+    <output-path>$USER_HOME$/Documents/Servers/1.20.4/plugins</output-path>
+    <root id="archive" name="Spigot-HomePlugin.jar">
+      <element id="module-output" name="Spigot-HomePlugin" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/3.12.14/mongo-java-driver-3.12.14.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
