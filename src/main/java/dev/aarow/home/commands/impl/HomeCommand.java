@@ -28,8 +28,7 @@ public class HomeCommand extends BaseCommand {
         }
 
         HomeTeleportRequest homeTeleportRequest = new HomeTeleportRequest(player.getUniqueId());
-
-        // TODO: add cancel event
+        
         profile.setHomeTeleportRequest(homeTeleportRequest);
 
         player.sendMessage(CC.translate("&7[&3&lHomes&7] &eYou will teleport to the " + home.getName() + " home in 5 seconds..."));
